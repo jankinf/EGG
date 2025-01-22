@@ -106,7 +106,8 @@ class ImageNetFeat(data.Dataset):
         # There should be only 1 key
         key = list(fc.keys())[0]
         # Get the data
-        data = torch.FloatTensor(list(fc[key]))
+        nd_data = np.array(fc[key])
+        data = torch.FloatTensor(nd_data)
 
         # normalise data
         img_norm = torch.norm(data, p=2, dim=1, keepdim=True)
