@@ -1,0 +1,25 @@
+# https://github.com/jankinf/EGG/tree/main/egg/zoo/signal_game
+python -m egg.zoo.signal_game.train \
+    --root='data/Signal_Game/signaling_game_data' \
+    --checkpoint_dir='ckpts/signal_game' \
+    --tensorboard_dir='runs/signal_game' \
+    --game_size=2 \
+    --same=0 \
+    --embedding_size=50 \
+    --hidden_size=20 \
+    --vocab_size=10 \
+    --tau_s=10 \
+    --batch_size=32 \
+    --n_epochs=50 \
+    --batches_per_epoch=100 \
+    --mode='rf' \
+    --gs_tau=1.0 \
+    --max_len=1 \
+    --optimizer='adam' \
+    --lr=0.01 \
+    --inf_rec=0 \
+    --random_seed=1291508749 \
+    --checkpoint_freq=5 \
+    --validation_freq=1 \
+    --update_freq=1 \
+    --tensorboard

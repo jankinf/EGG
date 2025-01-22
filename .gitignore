@@ -8,6 +8,8 @@ __pycache__/
 *.swo
 
 data/
+runs/
+ckpts/
 .idea/
 # C extensions
 *.so
