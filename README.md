@@ -68,8 +68,8 @@ Generally, we assume that you use PyTorch 1.1.0 or newer and Python 3.6 or newer
 
  1. (optional) It is a good idea to develop in a new conda environment, e.g. like this:
     ```
-    conda create --name egg36 python=3.6
-    conda activate egg36
+    conda create --name egg310 python=3.10
+    conda activate egg319
     ```
  2. EGG can be installed as a package to be used as a library
     ```

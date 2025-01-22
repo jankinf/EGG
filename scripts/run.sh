@@ -1,0 +1,1 @@
+python -m egg.zoo.mnist_autoenc.train --vocab=10 --n_epochs=50
